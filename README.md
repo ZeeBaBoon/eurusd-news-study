@@ -69,3 +69,9 @@ All pinned to exact Hugging Face commits in `config.py`.
 - `cluster_id`, `n_in_cluster`, `is_primary`: releases in the same minute are one market event
 - `p0`, `ret_{1,5,15,30,60,240}m_pips`, `hi_60m_pips`, `lo_60m_pips`
 - `pre_vol_60m_pips`, `spread_pre_pips`, `spread_max_5m_pips` (spreads are NaN before 2016)
+
+## License
+
+Code: [MIT](LICENSE). The license covers this repository's code and figures only, not the
+third-party data it downloads (ForexFactory, Dukascopy, HistData), which stays under its
+owners' terms.
