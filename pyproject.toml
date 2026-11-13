@@ -1,0 +1,27 @@
+[project]
+name = "eurusd-news"
+version = "0.1.0"
+description = "EUR/USD news-rebound research: event table (module 1)"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "huggingface_hub>=0.24",
+    "tzdata",
+]
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.11.2",
+    "pytest>=8",
+]
+
+[project.scripts]
+eurusd-news = "eurusd_news.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
